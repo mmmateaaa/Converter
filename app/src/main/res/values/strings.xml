@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="title_choose_convertion">Choose what you want to convert:</string>
+</resources>
