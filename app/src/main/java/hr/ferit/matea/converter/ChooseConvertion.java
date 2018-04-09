@@ -8,6 +8,10 @@ import android.widget.ImageButton;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import hr.ferit.matea.converter.Convertions.CurrencyConvertion;
+import hr.ferit.matea.converter.Convertions.DistanceConvertion;
+import hr.ferit.matea.converter.Convertions.TemperatureConvertion;
+import hr.ferit.matea.converter.Convertions.WeightConvertion;
 
 public class ChooseConvertion extends AppCompatActivity {
 
@@ -27,7 +31,24 @@ public class ChooseConvertion extends AppCompatActivity {
 
     @OnClick({R.id.bWeight, R.id.bTemperature, R.id.bDistance, R.id.bCurrency})
     public void openConvertion(ImageButton imgBtn) {
-        Intent actionToOpenConvertion = new Intent(ChooseConvertion.this, Convertion.class);
-        startActivity(actionToOpenConvertion);
+        switch (imgBtn.getId()) {
+            case R.id.bCurrency:
+                Intent actionToOpenCurrencyConvertion = new Intent(ChooseConvertion.this, CurrencyConvertion.class);
+                startActivity(actionToOpenCurrencyConvertion);
+                break;
+            case R.id.bDistance:
+                Intent actionToOpenDistanceConvertion = new Intent(ChooseConvertion.this, DistanceConvertion.class);
+                startActivity(actionToOpenDistanceConvertion);
+                break;
+            case R.id.bWeight:
+                Intent actionToOpenWeightConvertion = new Intent(ChooseConvertion.this, WeightConvertion.class);
+                startActivity(actionToOpenWeightConvertion);
+                break;
+            case R.id.bTemperature:
+                Intent actionToOpenTempConvertion = new Intent(ChooseConvertion.this, TemperatureConvertion.class);
+                startActivity(actionToOpenTempConvertion);
+                break;
+        }
+
     }
 }

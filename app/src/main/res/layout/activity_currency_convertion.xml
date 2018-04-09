@@ -1,0 +1,32 @@
+<LinearLayout android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/currency_converter"
+        android:textSize="@dimen/title"
+        android:layout_marginBottom="@dimen/title_margin_bottom"/>
+
+    <Spinner
+        android:id="@+id/sCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/currency_units"
+        android:spinnerMode="dropdown"/>
+
+    <EditText
+        android:id="@+id/etCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_value"/>
+
+    <Button
+        android:id="@+id/bCurrencySubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/convert"/>
+
+</LinearLayout>

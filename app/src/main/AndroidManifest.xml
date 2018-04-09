@@ -16,7 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Convertion"></activity>
+        <activity android:name=".Convertions.CurrencyConvertion" />
+        <activity android:name=".Convertions.DistanceConvertion" />
+        <activity android:name=".Convertions.WeightConvertion" />
+        <activity android:name=".Convertions.TemperatureConvertion" />
+        <activity android:name=".Results"></activity>
     </application>
 
 </manifest>

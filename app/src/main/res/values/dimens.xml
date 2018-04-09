@@ -2,4 +2,6 @@
 <resources>
     <dimen name="btn_margin_vertical">5dp</dimen>
     <dimen name="btn_margin_horizontal">50dp</dimen>
+    <dimen name="title">30sp</dimen>
+    <dimen name="title_margin_bottom">15dp</dimen>
 </resources>
