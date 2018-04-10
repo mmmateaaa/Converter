@@ -1,9 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context="hr.ferit.matea.converter.Convertions.TemperatureConvertion">
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/temperature_converter"
+        android:textSize="@dimen/title"
+        android:layout_marginBottom="@dimen/title_margin_bottom"/>
+
+    <Spinner
+        android:id="@+id/sTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/temperature_units"
+        android:spinnerMode="dropdown"/>
+
+    <EditText
+        android:id="@+id/etTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_value"/>
+
+    <Button
+        android:id="@+id/bTemperatureSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/convert"/>
+
+</LinearLayout>

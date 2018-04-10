@@ -6,25 +6,25 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/weight_converter"
+        android:text="@string/length_converter"
         android:textSize="@dimen/title"
         android:layout_marginBottom="@dimen/title_margin_bottom"/>
 
     <Spinner
-        android:id="@+id/sWeigth"
+        android:id="@+id/sLength"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/weight_units"
+        android:entries="@array/length_units"
         android:spinnerMode="dropdown"/>
 
     <EditText
-        android:id="@+id/etWeigth"
+        android:id="@+id/etLength"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/enter_value"/>
 
     <Button
-        android:id="@+id/bWeigthSubmit"
+        android:id="@+id/bLengthSubmit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/convert"/>

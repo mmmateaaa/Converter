@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Convertions.CurrencyConvertion" />
-        <activity android:name=".Convertions.DistanceConvertion" />
+        <activity android:name=".Convertions.LengthConvertion" />
         <activity android:name=".Convertions.WeightConvertion" />
         <activity android:name=".Convertions.TemperatureConvertion" />
         <activity android:name=".Results"></activity>

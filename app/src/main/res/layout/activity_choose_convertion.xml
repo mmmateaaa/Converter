@@ -8,14 +8,13 @@
         android:layout_height="wrap_content"
         android:text="@string/title_choose_convertion"
         android:layout_marginVertical="@dimen/btn_margin_vertical"
-        android:textAlignment="center"/>
+        android:textSize="@dimen/title"/>
 
     <ImageButton
         android:id="@+id/bCurrency"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="@dimen/btn_margin_vertical"
-        android:layout_marginHorizontal="@dimen/btn_margin_horizontal"
         android:src="@drawable/money"/>
 
     <ImageButton
@@ -23,23 +22,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="@dimen/btn_margin_vertical"
-        android:layout_marginHorizontal="@dimen/btn_margin_horizontal"
         android:src="@drawable/weight"/>
 
     <ImageButton
-        android:id="@+id/bDistance"
+        android:id="@+id/bLength"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="@dimen/btn_margin_vertical"
-        android:layout_marginHorizontal="@dimen/btn_margin_horizontal"
-        android:src="@drawable/distance"/>
+        android:src="@drawable/ruler"/>
 
     <ImageButton
         android:id="@+id/bTemperature"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="@dimen/btn_margin_vertical"
-        android:layout_marginHorizontal="@dimen/btn_margin_horizontal"
         android:src="@drawable/thermometer"/>
 
 </LinearLayout>

@@ -14,42 +14,42 @@ import butterknife.OnClick;
 import hr.ferit.matea.converter.R;
 import hr.ferit.matea.converter.Results;
 
-public class CurrencyConvertion extends AppCompatActivity {
+public class LengthConvertion extends AppCompatActivity {
 
-    @BindView(R.id.sCurrency) Spinner sCurrency;
-    @BindView(R.id.bCurrencySubmit) Button bCurrencySubmit;
-    @BindView(R.id.etCurrency) EditText etCurrency;
+    @BindView(R.id.sLength) Spinner sLength;
+    @BindView(R.id.bLengthSubmit) Button bLengthSubmit;
+    @BindView(R.id.etLength) EditText etLength;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_currency_convertion);
+        setContentView(R.layout.activity_length_convertion);
 
         ButterKnife.bind(this);
 
-        ArrayAdapter<CharSequence> sCurrencyAdapter = ArrayAdapter.createFromResource(this, R.array.currency_units, android.R.layout.simple_spinner_item);
-        sCurrencyAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        sCurrency.setAdapter(sCurrencyAdapter);
-
+        ArrayAdapter<CharSequence> sLengthAdapter = ArrayAdapter.createFromResource(this, R.array.length_units, android.R.layout.simple_spinner_item);
+        sLengthAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        sLength.setAdapter(sLengthAdapter);
     }
 
-    @OnClick(R.id.bCurrencySubmit)
+    @OnClick(R.id.bLengthSubmit)
     public void addListenerOnSubmit() {
         Intent actionToOpenResults = new Intent(this, Results.class);
-        String spinnerValue = sCurrency.getSelectedItem().toString();
+        String spinnerValue = sLength.getSelectedItem().toString();
 
-        double input = Double.parseDouble(etCurrency.getText().toString());
+        double input = Double.parseDouble(etLength.getText().toString());
 
         double result;
 
-        if (spinnerValue.equals("HRK->EUR")) {
-            result = input*7.43183187;
+        if (spinnerValue.equals("Inch->Centimeter")) {
+            result = input*2.54;
         }
         else {
-            result = input/7.43183187;
+            result = input/2.54;
         }
 
         actionToOpenResults.putExtra(Results.RESULT, result);
         startActivity(actionToOpenResults);
     }
+
 }
