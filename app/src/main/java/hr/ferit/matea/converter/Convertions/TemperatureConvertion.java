@@ -42,10 +42,10 @@ public class TemperatureConvertion extends AppCompatActivity {
         double result;
 
         if (spinnerValue.equals("Celsius->Kelvin")) {
-            result = input*274.15;
+            result = input+274.15;
         }
         else {
-            result = input/274.15;
+            result = input-274.15;
         }
 
         actionToOpenResults.putExtra(Results.RESULT, result);
